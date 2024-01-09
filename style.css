@@ -1,0 +1,53 @@
+body{
+  margin: 20px;
+}
+
+.navbar{
+  display: grid;
+  grid-template-columns: 6fr 0.5fr 0.5fr;
+  gap: 3px;
+  width: auto;
+  height: auto;
+  background: linear-gradient(120deg, #2f00ff 20px, #ff00c8 400px);
+  border-radius: 20px;
+}
+
+.img{
+  width: 15vh;
+  height: auto; /* Ensures the aspect ratio is maintained */
+  display: inline-block; /* Removes any extra space below the image */
+  margin-left: 3vh; /* Centers the image */
+  border-radius: 10px;
+}
+
+.bt {
+  width: 70px;
+  padding: 5px;
+  font-size: 14px;
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255);
+  transition: background-color 0.2s ease;
+  margin-right: 20px;
+}
+
+.b1{
+  margin-left: 10vh;
+}
+
+
+.b2{
+  width: 90px;
+}
+
+.bt:hover{
+  background-color: black;
+  color: aliceblue;
+  transition: background-color 0.2s ease;
+}
+
+
+@media screen and (min-width: 768px) {
+  .navbar{
+    background: linear-gradient(120deg, #2f00ff 1px, #ff00c8 1800px);
+  } 
+}

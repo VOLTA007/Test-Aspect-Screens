@@ -120,26 +120,25 @@ hr{
   direction: rtl;
 }
 
-.imgdeadly {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 25vh;
-  width: 20vh;
-  background: linear-gradient(to right bottom, #3d12fa 0%, #5a08c4 35%, #ff00aa 100%);
-  border-radius: 40px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); /* Add box shadow */
+.deadly{
+  position: relative;
+  height: 35vh;
+  width: auto;
+  margin-right: 10px;
+  margin-top: -32px;
+  border-radius: 30px;
 }
 
-.deadly {
-   /* Ensure the image doesn't overflow the container */
-  width: 25vh;
-  height: auto;
-  border-bottom-left-radius: 88px;
-  border-bottom-right-radius: 32px;
-  margin-left: -47px;
-  margin-bottom: 33px;
+.imgdeadly{
+  background: linear-gradient(to right bottom, #3d12fa 0%, #5a08c4 35%, #ff00aa 100%);
+  border-radius: 40px;
+  border-bottom-left-radius: 400px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); /* Add box shadow */
+  width: 150px;
+  height: 200px;
 }
+
+
 
 .reversedbut {
   display: flex;
@@ -154,6 +153,10 @@ hr{
   order: 1; /* Move the first button to the right (after the second button) */
 }
 
+
+.f1{
+  font-size: 35px;
+}
 
 
 

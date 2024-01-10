@@ -120,22 +120,24 @@ hr{
   direction: rtl;
 }
 
-.deadly{
-  position: relative;
-  height: 35vh;
-  width: auto;
-  margin-right: 10px;
-  margin-top: -32px;
-  border-radius: 30px;
-}
-
-.imgdeadly{
+.imgdeadly {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 25vh;
+  width: 20vh; /* Allow the image to resize based on its natural size */
   background: linear-gradient(to right bottom, #3d12fa 0%, #5a08c4 35%, #ff00aa 100%);
   border-radius: 40px;
   border-bottom-left-radius: 400px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); /* Add box shadow */
-  width: 150px;
-  height: 200px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+.deadly {
+  width: 100%; /* Ensure the container takes full width of the parent container */
+  max-width: 30vh; /* Set a maximum width for the container */
+  max-height: 25vh; /* Set a maximum height for the container */
+  margin-left: -30px;
+  margin-bottom: -1vh;
 }
 
 

@@ -2,6 +2,7 @@ body{
   margin: 15px;
   overflow-x: hidden;
   font-family: 'Plus Jakarta Sans', sans-serif;
+  background-color: rgb(255, 255, 235);
 }
 
 
@@ -23,14 +24,18 @@ body{
   border-radius: 10px;
 }
 
-.bt {
+.b2 {
   padding: 4px 1px;
   font-size: 10px;
   border-radius: 10px;
   background-color: rgb(255, 255, 255);
   transition: background-color 0.2s ease;
-  width: auto;
+  width: 60px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); /* Add box shadow */
+}
+
+.b3{
+  margin-left: 3vh;
 }
 
 .bt:hover{
@@ -53,7 +58,7 @@ body{
 .container1{
   margin-top: 6vh;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(0px,1fr));
+  grid-template-columns: repeat(2, 1fr);
   align-items: center;
 }
 
@@ -76,6 +81,20 @@ body{
 
 
 
+.b5{
+  padding: 4px;
+  font-size: 11px;
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255);
+  transition: background-color 0.2s ease;
+  width: auto;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); /* Add box shadow */
+}
+
+.b6{
+  background-color: #2f00ff;
+  color: aliceblue;
+}
 
 
 

@@ -135,9 +135,10 @@ hr{
 .deadly {
   width: 100%; /* Ensure the container takes full width of the parent container */
   max-width: 30vh; /* Set a maximum width for the container */
-  max-height: 25vh; /* Set a maximum height for the container */
-  margin-left: -30px;
-  margin-bottom: -1vh;
+  height: 35vh;
+  width: auto;
+  margin-right: 10vh;
+  margin-bottom: 10vh;
 }
 
 

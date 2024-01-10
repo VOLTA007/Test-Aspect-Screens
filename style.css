@@ -159,6 +159,10 @@ hr{
 
 .f1{
   font-size: 35px;
+  font-weight: 600;
+  background: -webkit-linear-gradient(0deg, #2f00ff 6px, #ff00c8 210px);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 

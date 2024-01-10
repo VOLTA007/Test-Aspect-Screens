@@ -16,7 +16,7 @@ body{
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); /* Add box shadow */
 }
 
-.img{
+.img1{
   width: 10vh;
   height: auto;
   display: inline-block; 
@@ -58,7 +58,7 @@ body{
 .container1{
   margin-top: 6vh;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(0px, 1fr));
   align-items: center;
 }
 
@@ -96,10 +96,63 @@ body{
   color: aliceblue;
 }
 
-.breakerm{
-  text-align: center;
+.b8{
+    background-color: #2f00ff;
+    color: aliceblue;
 }
 
+.breakerm{
+  text-align: center;
+  margin-top: 4vh;
+}
+
+hr{
+  margin-top: 4vh;
+}
+
+
+.c1 {
+  margin-top: 6vh;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(0px, 1fr));
+  grid-template-columns: 2fr 1fr;
+  align-items: center;
+  direction: rtl;
+}
+
+.imgdeadly {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 25vh;
+  width: 20vh;
+  background: linear-gradient(to right bottom, #3d12fa 0%, #5a08c4 35%, #ff00aa 100%);
+  border-radius: 40px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); /* Add box shadow */
+}
+
+.deadly {
+   /* Ensure the image doesn't overflow the container */
+  width: 25vh;
+  height: auto;
+  border-bottom-left-radius: 88px;
+  border-bottom-right-radius: 32px;
+  margin-left: -47px;
+  margin-bottom: 33px;
+}
+
+.reversedbut {
+  display: flex;
+  gap: 4px;
+}
+
+.b9 {
+  order: -1; /* Move the second button to the left (before the first button) */
+}
+
+.b8 {
+  order: 1; /* Move the first button to the right (after the second button) */
+}
 
 
 

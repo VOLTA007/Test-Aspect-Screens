@@ -7,8 +7,8 @@ body{
 
 
 .navbar{
-  display: grid;
-  grid-template-columns: 1fr 0.5fr 0.5fr;
+  display: flex;
+  justify-content: flex-end;
   background: linear-gradient(120deg, #2f00ff 20px, #ff00c8 400px);
   border-radius: 20px;
   padding-right: 5px;
@@ -17,22 +17,27 @@ body{
 }
 
 .img1{
+  justify-content: flex-start;
   width: 10vh;
+  margin-right: auto;
   height: auto;
-  display: inline-block; 
-  margin-left: 3vh; 
+  margin-left: 1rem;
   border-radius: 10px;
 }
 
+
 .b2 {
-  padding: 4px 1px;
+  padding: 4px 3px;
   font-size: 10px;
   border-radius: 10px;
   background-color: rgb(255, 255, 255);
   transition: background-color 0.2s ease;
-  width: 60px;
+  min-width: none;
+  max-width: 70px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); /* Add box shadow */
 }
+
+
 
 .b3{
   margin-left: 3vh;
@@ -158,11 +163,7 @@ hr{
 
 
 .f1{
-  font-size: 35px;
-  font-weight: 600;
-  background: -webkit-linear-gradient(0deg, #2f00ff 6px, #ff00c8 210px);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  font-size: 30px;
 }
 
 

@@ -16,14 +16,69 @@ body{
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); /* Add box shadow */
 }
 
-.img1{
-  justify-content: flex-start;
-  width: 10vh;
-  margin-right: auto;
-  height: auto;
-  margin-left: 1rem;
+
+.hamburger-menu {
+  display: flex;
+  box-shadow: 0 4px 6px rgba(9, 32, 238, 0.5); /* Add box shadow */
+  flex-direction: column;
+  cursor: pointer;
+  background-color: #5069f5;
   border-radius: 10px;
+  padding: 8px;
 }
+
+.hamburger-menu div {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 2px 0px;
+  transition: background-color 0.3s;
+  border-radius: 60px;
+}
+
+
+/* Rotate the first and third bars to create the X icon */
+.hamburger-menu div:first-child {
+  transform-origin: top left;
+  transition: all 1s;
+}
+
+.hamburger-menu div:last-child {
+  transform-origin: bottom left;
+  transition: all 1s;
+}
+
+/* When clicked, transform the bars into an X */
+.hamburger-menu.clicked div:first-child {
+  transform: rotate(45deg);
+  transition: all 1s;
+}
+
+.hamburger-menu.clicked div:nth-child(2) {
+  opacity: 0;
+  transition: all 1s;
+}
+
+.hamburger-menu.clicked div:last-child {
+  transform: rotate(-45deg);
+  transition: all 1s;
+}
+
+
+.menu{
+  opacity: 1;
+  background-color: #2e206d;
+  position: fixed;
+  width: 30%;
+  height: auto;
+  margin-top: 15vh;
+  padding: 6px;
+  border-radius: 20px;
+  margin-right: -2vh;
+  transform: translateX(120%);
+  transition: all 0.5s;
+}
+
 
 
 .b2 {
@@ -36,6 +91,53 @@ body{
   max-width: 70px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); /* Add box shadow */
 }
+
+
+.menu.show{
+  display: block;
+  opacity: 1;
+  transform: translateX(-10%);
+  transition: all 1s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.img1{
+  justify-content: flex-start;
+  width: 10vh;
+  margin-right: auto;
+  height: auto;
+  margin-left: 1rem;
+  border-radius: 10px;
+}
+
+
+
 
 
 

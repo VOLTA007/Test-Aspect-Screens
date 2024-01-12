@@ -19,58 +19,58 @@ body{
 
 .hamburger-menu {
   display: flex;
-  box-shadow: 0 4px 6px rgba(9, 32, 238, 0.5); /* Add box shadow */
+  box-shadow: 0 4px 6px rgba(9, 32, 238, 0.5);
   flex-direction: column;
   cursor: pointer;
   background-color: #5069f5;
   border-radius: 10px;
+  padding: 4px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
-  padding: 8px;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  height: 40px;
 }
 
 .hamburger-menu div {
-  width: 25px;
+  width: 30px;
   height: 3px;
-  background-color: #fff;
-  margin: 2px 0px;
-  transition: background-color 0.3s;
-  border-radius: 60px;
+  background-color: black;
+  margin: 3px;
+  transition: all 0.5s;
 }
 
 
-/* Rotate the first and third bars to create the X icon */
-.hamburger-menu div:first-child {
-  transform-origin: top left;
-  transition: all 1s;
-}
 
-.hamburger-menu div:last-child {
-  transform-origin: bottom left;
-  transition: all 1s;
-}
 
-/* When clicked, transform the bars into an X */
 .hamburger-menu.clicked div:first-child {
-  transform: rotate(45deg);
-  transition: all 1s;
+  transform: translateY(6px) rotate(45deg);
+  padding: 0;
+  margin: 0;
 }
 
 .hamburger-menu.clicked div:nth-child(2) {
   opacity: 0;
-  transition: all 1s;
+  transition: all 0.5;
 }
 
 .hamburger-menu.clicked div:last-child {
-  transform: rotate(-45deg);
-  transition: all 1s;
+  transform: translateY(-6px) rotate(-45deg);
+  padding: 0;
+  margin: 0;
 }
 
 
 .menu{
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
   opacity: 1;
   background-color: #2e206d;
-  position: fixed;
-  width: 30%;
+  position: absolute;
+  max-width: 40vh;
+  min-width: 10vh;
   height: auto;
   margin-top: 15vh;
   padding: 6px;
@@ -78,6 +78,7 @@ body{
   margin-right: -2vh;
   transform: translateX(120%);
   transition: all 0.5s;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
 }
 
 
@@ -91,25 +92,22 @@ body{
   min-width: none;
   max-width: 70px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); /* Add box shadow */
+  transform: translateX(0%); /* Initial position */
+  transition: transform 1s;
+}
+
+.b2.show {
+  transform: translateX(200%);
 }
 
 
+
+
 .menu.show{
-  display: block;
   opacity: 1;
   transform: translateX(-10%);
   transition: all 1s;
 }
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -137,14 +135,6 @@ body{
   border-radius: 10px;
 }
 
-
-
-
-
-
-.b3{
-  margin-left: 3vh;
-}
 
 .bt:hover{
   background-color: black;
